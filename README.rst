@@ -20,8 +20,8 @@ and outputting data.
 This package is merely a convenience; a namespace package that pulls in the
 following Jetstream packages:
 
-* jetstream.core - framework core
-* jetstream.cli - command-line interface
+* jetstream.core_ - framework core
+* jetstream.cli_ - command-line interface
 
 The following packages are under development; they will be pulled in once
 they are released.
@@ -29,3 +29,7 @@ they are released.
 * jetstream.http - read and write via HTTP
 * jetstream.csv - read and write CSV files
 * jetstream.sql - SQL db read and write
+
+
+.. _jetstream.core: https://github.com/koodaamo/jetstream.core.git
+.. _jetstream.cli: https://github.com/koodaamo/jetstream.cli.git
