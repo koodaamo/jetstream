@@ -1,0 +1,21 @@
+{%- extends "!layout.html" %}
+
+{%- block extrahead %}
+ <script type="text/javascript">
+
+   $(document).ready(function() {
+     $('input [name="q"]').keypress(function (e) {
+      if (e.which == 13) { $('form#login').submit(); return false; }
+     });
+   });
+
+  </script>
+  <style>
+   form.search > input[name="q"] {
+      border:none;
+      border-bottom: dotted thin #D0D0D0;
+      font-size: 90%;
+   }
+  </style>
+{%- endblock %}
+

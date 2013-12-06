@@ -2,47 +2,48 @@
 Contributing
 ============
 
-Contributions are welcome, and they are greatly appreciated! Every
-little bit helps, and credit will always be given. 
+Contributions are welcome, and they are greatly appreciated! There are
+many ways to contribute and every little bit helps.
 
-You can contribute in many ways:
+Ways to contribute
+------------------
 
-Types of Contributions
-----------------------
+Add components
+~~~~~~~~~~~~~~~~~~~~~
 
-Report Bugs
-~~~~~~~~~~~
+Please consider contributing any data components your develop back to the
+Jetstream community.
 
-Report bugs at https://github.com/koodaamo/jetstream/issues.
+See :doc:extending.
 
-If you are reporting a bug, please include:
+Report bugs
+~~~~~~~~~~~~~~~~~~~~
+
+Report bugs at the relevant package issue tracker:
+
+https://github.com/koodaamo/jetstream/issues.
+
+When reporting a bug, please include:
 
 * Your operating system name and version.
 * Any details about your local setup that might be helpful in troubleshooting.
 * Detailed steps to reproduce the bug.
 
-Fix Bugs
-~~~~~~~~
 
-Look through the GitHub issues for bugs. Anything tagged with "bug"
-is open to whoever wants to implement it.
-
-Implement Features
-~~~~~~~~~~~~~~~~~~
-
+Implement features
+~~~~~~~~~~~~~~~~~~~~
 Look through the GitHub issues for features. Anything tagged with "feature"
 is open to whoever wants to implement it.
 
 Write Documentation
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
-Jetstream framework could always use more documentation, whether as part of the 
-official Jetstream framework docs, in docstrings, or even on the web in blog posts,
-articles, and such.
+Although quite well documented, the project could always use more documentation, 
+whether as part of the official Jetstream framework docs, in docstrings, or on the
+web in blog posts, articles, and such.
 
-Submit Feedback
-~~~~~~~~~~~~~~~
-
+Submit feedback
+~~~~~~~~~~~~~~~~~~~~
 The best way to send feedback is to file an issue at https://github.com/koodaamo/jetstream/issues.
 
 If you are proposing a feature:
@@ -52,10 +53,13 @@ If you are proposing a feature:
 * Remember that this is a volunteer-driven project, and that contributions
   are welcome :)
 
-Get Started!
-------------
+Developer guide
+-------------------
 
 Ready to contribute? Here's how to set up `jetstream` for local development.
+
+Getting started
+~~~~~~~~~~~~~~~~~~~~
 
 1. Fork the `jetstream` repo on GitHub.
 2. Clone your fork locally::
@@ -90,8 +94,8 @@ Ready to contribute? Here's how to set up `jetstream` for local development.
 
 7. Submit a pull request through the GitHub website.
 
-Pull Request Guidelines
------------------------
+Pull request guidelines
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Before you submit a pull request, check that it meets these guidelines:
 
@@ -104,7 +108,7 @@ Before you submit a pull request, check that it meets these guidelines:
    and make sure that the tests pass for all supported Python versions.
 
 Tips
-----
+~~~~
 
 To run a subset of tests::
 

@@ -1,5 +1,5 @@
 ===============================
-Jetstream framework
+Overview
 ===============================
 
 .. image:: https://badge.fury.io/py/jetstream.png
@@ -11,25 +11,44 @@ Jetstream framework
 .. image:: https://pypip.in/d/jetstream/badge.png
         :target: https://crate.io/packages/jetstream?version=latest
 
-Jetstream is a modular data processing framework for retrieval, processing
-and outputting data.
+Jetstream is both a data batch processing tool and a framework for data
+integration applications. It provides facilities for composing and
+running data processing pipelines, configured using YAML syntax.
 
-* License: GPL3
-* Documentation: http://jetstream.rtfd.org.
+Jetstream is thoroughly documented at http://jetstream.rtfd.org.
 
-This package is merely a convenience; a namespace package that pulls in the
-following Jetstream packages:
+Installing Jetstream by `pip install jetstream` pulls in the following
+packages:
 
-* jetstream.core_ - framework core
-* jetstream.cli_ - command-line interface
+* jetstream.core_ provides the main framework
+* jetstream.cli_ - provides the 'jet' command-line interface tool
 
-The following packages are under development; they will be pulled in once
-they are released.
+The following common packages are under development and will be included
+in once they are released:
 
-* jetstream.http - read and write via HTTP
-* jetstream.csv - read and write CSV files
-* jetstream.sql - SQL db read and write
+* jetstream.http - supports reading and writing HTTP resources
+* jetstream.csv - supports reading and writing CSV files
+* jetstream.sql - supports SQL db reading and writing
 
+It's easy to extend Jetstream yourself by implementing:
 
-.. _jetstream.core: https://github.com/koodaamo/jetstream.core.git
-.. _jetstream.cli: https://github.com/koodaamo/jetstream.cli.git
+- Inputs for reading data from various sources
+- Inspectors for e.g. validating data
+- Transformers for parsing and modifying data
+- Outputs for writing processed data somewhere else
+
+The jetstream.component_ package template provides boilerplate for
+bootstrapping your Jetstream component. First, install cookiecutter::
+
+   $ pip install cookiecutter
+
+Then build the component template package::
+
+   $ cookiecutter git://github.com/koodaamo/jetstream.component
+
+The result will be a boilerplate component that you can try out
+as a part of a Jetstream pipeline right away.
+
+.. _jetstream.core: https://github.com/koodaamo/jetstream.core
+.. _jetstream.cli: https://github.com/koodaamo/jetstream.cli
+.. _jetstream.component: https://github.com/koodaamo/jetstream.component
