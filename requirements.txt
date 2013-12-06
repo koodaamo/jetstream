@@ -1,2 +1,4 @@
 jetstream.core
 jetstream.cli
+sphinx-better-theme
+sphinxcontrib-programoutput
